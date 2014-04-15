@@ -62,8 +62,14 @@ public class Voiture extends Observable {
 		return this.vitesseYMetreParSecondes;
 	}
 	
+<<<<<<< HEAD
 	public void avancerEnFonctionDeLaVitesseEtAngle() {
 		miseAJourPosition();
+=======
+	public void avancerEnFonctionDeLaVitesse() {
+		coordXEnMetres += vitesseXMetreParSecondes;
+		coordYEnMetres += vitesseYMetreParSecondes;
+>>>>>>> 2bf09d2c6f8831df15300ee6313c282031f6a0a1
 		notificationObservateurs();
 	}
 
