@@ -54,4 +54,11 @@ public class TestVoiture {
 		assertEquals(45, voiture.getAngle());
 	}
 	
+	@Test
+	public void testMiseAjourPositionEnFonctionVitesseY() {
+		Voiture voiture = new Voiture(0, 20, 0, 80);
+		voiture.avancerEnFonctionDeLaVitesse();
+		assertEquals(100, voiture.getCoordYEnMetres());
+	}
+	
 }
