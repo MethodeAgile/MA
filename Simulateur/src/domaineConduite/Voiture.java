@@ -8,7 +8,9 @@ public class Voiture extends Observable {
 	private int coordYEnMetres;
 	private int vitesseXMetreParSecondes;
 	private int vitesseYMetreParSecondes;
+
 	private int angle;
+	private int vitesse;
 
 	public static final int largeurDomaine = 1000;
 
@@ -61,5 +63,25 @@ public class Voiture extends Observable {
 	
 	public int getAngle() {
 		return angle;
+	}
+
+	public void accelerer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void decelerer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void tournerGauche() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void tournerDroite() {
+		// TODO Auto-generated method stub
+		
 	}
 }
