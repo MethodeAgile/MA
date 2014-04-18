@@ -75,7 +75,6 @@ public class TestVoiture {
 		Voiture voiture = new Voiture(20, 30, 45);
 		assertEquals(45, voiture.getAngle());
 	}
-<<<<<<< HEAD
 
 	@Test
 	public void testGetVitesse() {
@@ -120,14 +119,5 @@ public class TestVoiture {
 		voiture.tournerGauche();
 		assertEquals(angle - Voiture.CONSTANTE_ROTATION, voiture.getAngle());
 	}
-=======
-	
-	@Test
-	public void testMiseAjourPositionEnFonctionVitesseY() {
-		Voiture voiture = new Voiture(0, 20, 0, 80);
-		voiture.avancerEnFonctionDeLaVitesse();
-		assertEquals(100, voiture.getCoordYEnMetres());
-	}
-	
->>>>>>> 2bf09d2c6f8831df15300ee6313c282031f6a0a1
+
 }
