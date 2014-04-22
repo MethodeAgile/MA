@@ -155,5 +155,12 @@ public class TestVoiture {
 		voiture.tournerGauche();
 		assertEquals(angle - Voiture.CONSTANTE_ROTATION, voiture.getAngle());
 	}
+	
+	@Test
+	public void testSetVitesse(){
+	    Voiture voiture = new Voiture(0, 0);
+        voiture.setVitesse(50);
+        assertEquals(50, voiture.getVitesse());
+	}
 
 }
