@@ -9,6 +9,42 @@ import domaineConduite.Voiture;
 public class TestVoiture {
 
 	@Test
+	public void testConstructeurADeuxParamètres() {
+		Voiture voiture = new Voiture(30,40);
+		assertEquals(30, voiture.getCoordXEnMetres());
+		assertEquals(40, voiture.getCoordYEnMetres());
+		assertEquals(0, voiture.getAngle());
+		assertEquals(0, voiture.getVitesse());
+	}
+	
+	@Test
+	public void testConstructeurATroisParamètres() {
+		Voiture voiture = new Voiture(30,40,10);
+		assertEquals(30, voiture.getCoordXEnMetres());
+		assertEquals(40, voiture.getCoordYEnMetres());
+		assertEquals(10, voiture.getAngle());
+		assertEquals(0, voiture.getVitesse());
+	}
+	
+	@Test
+	public void testConstructeurAQuatreParamètres() {
+		Voiture voiture = new Voiture(30,40,10,0);
+		assertEquals(30, voiture.getCoordXEnMetres());
+		assertEquals(40, voiture.getCoordYEnMetres());
+		assertEquals(10, voiture.getVitesseXMetreParSecondes());
+		assertEquals(0, voiture.getVitesseYMetreParSecondes());
+	}
+	
+	@Test
+	public void testSetAngle() {
+		Voiture voiture = new Voiture(20, 0);
+		voiture.setAngle(20);
+		assertEquals(20, voiture.getAngle());
+
+	}
+
+	
+	@Test
 	public void testGetX() {
 		Voiture voiture = new Voiture(20, 0);
 
